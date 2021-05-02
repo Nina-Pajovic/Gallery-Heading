@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Heading</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #flexbox {
+            display: grid;
+            grid-template-columns: 160px 160px 160px 160px 160px;
+            gap: 50px;
+            height: 50vh;
+        }
+
+        .inner {
+            max-width: 160px;
+            min-width: 160px;
+            border-radius: 8%;
+            border-style: solid;
+            border-width: thin;
+            border-color: rgb(197, 195, 195);
+            background-image: url("images/placeholder-image.png");
+            background-size: contain;
+            background-color: #569bbb;
+            text-align: center;
+        }
+
+        .inner>p {
+            background-color: white;
+            color: gray;
+            position: relative;
+            bottom: -103px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .inner {
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .inner {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .inner {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Gallery Heading</h1>
+    <div>
+        <div id="flexbox">
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+            <div class="inner">
+                <p>Image Title</p>
+            </div>
+        </div>
+        <div>
+            <p> Nam ac ornare nulla, id faucibus tellus. Donec sagittis luctus arcu id venenatis. In hac habitasse
+                platea
+                dictumst.
+                Sed nec hendrerit justo. Phasellus accumsan volutpat hendrerit. Mauris non justo ante.
+                Nam nulla lacus, pulvinar ac velit a, sagittis convallis tellus. Duis vitae diam quis est ornare
+                blandit.
+                Sed vel purus consequat sapien consectetur consectetur consectetur a arcu. Fusce rhoncus nisi a turpis
+                aliquam,
+                a porttitor lorem placerat.
+                Nulla varius iaculis iaculis. Donec ornare vestibulum felis efficitur laoreet. Suspendisse id mi
+                suscipit,
+                faucibus ante a, ornare metus.</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
